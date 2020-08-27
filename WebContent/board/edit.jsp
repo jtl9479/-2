@@ -30,66 +30,7 @@
 <body>
 
 
-	<div class="container">
-		<div class="list-box">
-			<table class="table table-hover"">
-				<thead class="thead-dark">
-
-
-
-					<tr>
-						<th>번호</th>
-						<th>제목</th>
-						<th>글쓴이</th>
-						<th>작성일시</th>
-					</tr>
-
-
-				</thead>
-				<tbody>
-					<% 
-					
-					SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-						String name[]= {" 제드 "," 말자하"," 요네 "," 야스오 "," 자르반"};
-						String title[]={"파리","도르트문트","리버풀","레알","바르샤","뮌헨","ATM"};					
-					
-						int i = 0 ;
-						for(i = 1; i < 11 ; i ++){
-							
-							Random random = new Random();
-							int randomInt = random.nextInt(5);
-							String randomname = name[randomInt];
-							
-							Random ran = new Random();
-							int ranInt = random.nextInt(7);
-							String ranname = title[ranInt];
-							
-							Date now = new Date();
-							String today = format.format(now);
-							
-					%>
-			
-					
-					<tr>
-						<td><%= i %></td>
-						<td><a href="/firstProject/board/view.jsp"><%= ranname %></a></td>
-						<td><%=randomname %></td>
-						<td><%=today %></td>
-					</tr>
-					<%
-						}
-						
-				%>
-
-				</tbody>
-
-			</table>
-				<div class="float-right"> <!--  레이어를 무시한다. -->
-						<a href="/firstProject/auth/login.jsp" style="color:black" >로그아웃</a>
-					</div>
-
-		</div>
-	</div>
+	뭘봐
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
