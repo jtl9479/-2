@@ -24,13 +24,41 @@
 }
 </style>
 
-<title>게시판 목록</title>
+<title>게시판 수정</title>
 <!-- 네비게이터를 이용한다. 1.테이블을 만든다. -->
 </head>
 <body>
 
 
-	뭘봐
+	<div class="container">
+
+		<div class="edit-box">
+			<div class="card">
+				<div class="card-body">
+					<form name="editForm" method="post" action="/board/edit">
+
+						<div class="form-group">
+							<label>이름</label> <input type="text" class="form-control" value="name">
+						</div>
+						<div class="form-group">
+							<label>제목</label> <input type="password" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>내용</label>
+							 <textarea class="form-control" rows="10"></textarea>
+						</div>
+					</form>
+
+				</div>
+				<div class="card-footer">
+					<a href="/board/list.jsp" class="btn btn-primary">목록</a>
+					<div class="float-right">
+						<button type="button" class="btn btn-danger" id="btnEdit">성공~!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
