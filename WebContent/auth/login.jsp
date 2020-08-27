@@ -48,6 +48,7 @@
 							<div class="form-group">
 								<label>비밀번호</label> <input type="password" class="form-control" placeholder="password" id="password">
 							</div>
+							</form>
 					</div>
 					<div class="card-footer">
 						<button type="button " class="btn btn-primary"><a href="/firstProject/board/list.jsp"  style="color:black">로그인</a></button>

@@ -1,8 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="java.util.Random"%>
-<%@ page import="java.util.Date"%>
-<%@ page import="java.text.SimpleDateFormat"%>
 <!doctype html>
 <html lang="en">
 <head>
@@ -59,12 +56,13 @@
 					</div>
 				</div>			
 				<div class="card-footer">
-					<a href="/board/list.jsp" class="btn btn-primary">목록</a>
+					<!-- <a href="/board/list.jsp" class="btn btn-primary">등록</a>  -->
+					<button type="button" class="btn btn-warning" >등록</button>
 					<div class="float-right">
 						<button type="button" class="btn btn-warning" >수정</button>
 						<!-- <a href="/board/edit.jsp" class="btn btn-warning">수정</a>  -->
 					<!-- 	<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">삭제</button>  -->
-					<button type="button" class="btn btn-warning" >삭제</button>
+					<button type="button" class="btn btn-danger" >삭제</button>
 					</div>
 				</div>
 			</div>
@@ -93,6 +91,8 @@
 			</div>
 		</div>
 	</div>
+	
+	
 	
 	<form id="deleteForm" method="post" action="/board/delete"> <!-- 보이지 않는 이값을 post방식으로 이용하여 서버에다가 보낸다.  -->
 	<input type="hidden" name="board_id"><!-- 이 정보는 화면에서는 보이지 않는다 -->
